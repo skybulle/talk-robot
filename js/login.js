@@ -23,7 +23,7 @@ form.onsubmit =async function(e) {
   console.log(resp);
   if (resp.code === 0) {
     alert('登录成功')
-    location.href = '../index.html'
+    location.href = './index.html'
   } else {
     txtId.p.innerText = '账号或密码错误'
     txtLoginPwd.input.value = ''

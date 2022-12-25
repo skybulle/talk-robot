@@ -3,7 +3,7 @@
   const users = resp.data
   if (!users) {
     alert('还未登录或登录失效')
-    location.href = '../login.html'
+    location.href = './login.html'
     return
   }
   const doms = {
@@ -20,7 +20,7 @@
   //注销事件
   doms.close.onclick = function() {
     API.removeItem()
-    location.href = '../login.html'
+    location.href = './login.html'
   }
   function setSideInfo () {
     doms.aside.nickname.innerText = users.nickname
